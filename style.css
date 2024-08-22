@@ -6,6 +6,7 @@
   --sub-heading: hsl(332, 51%, 32%);
   --header-color: hsl(14, 45%, 36%);
   --li-color: hsl(30, 10%, 34%);
+  --hr-color:hsl(30, 18%, 87%);
 }
 * {
   margin: 0;
@@ -110,9 +111,11 @@ span {
 span {
   font-weight: 500;
 }
+
 hr {
-  border: 1px solid hsl(30, 18%, 87%);
+  border: 1px solid var(--hr-color);
 }
+
 @media (max-width: 550px) {
   #main {
     width: 100%;

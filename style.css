@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
 :root {
   --bg-color: hsl(30, 54%, 90%);
-  --li-p-color: hsl(30, 18%, 87%);
+  --sub-bg-color: hsla(30, 18%, 87%, 0.215);
+  --title-color: hsl(24, 5%, 18%);
+  --sub-heading: hsl(332, 51%, 32%);
   --header-color: hsl(14, 45%, 36%);
+  --li-color: hsl(30, 10%, 34%);
 }
 * {
   margin: 0;
@@ -27,12 +30,12 @@ body {
   padding: 2rem;
   border-radius: 1rem;
 }
-.title h1 {
+#main .container .title h1 {
   font-family: "Young Serif", serif;
   font-weight: 400;
   font-size: 2.5rem;
   margin: 1.5rem 0;
-  color: hsl(24, 5%, 18%);
+  color: var(--title-color);
 }
 #main img {
   border-radius: 0.7rem;
@@ -47,13 +50,13 @@ body {
 }
 #preparation-time h2 {
   font-family: "Outfit", sans-serif;
-  color: hsl(332, 51%, 32%);
+  color: var(--sub-heading);
   font-size: 1.4rem;
   padding: 1.5rem 0 0 2rem;
 }
 #preparation-time {
   border-radius: 0.5rem;
-  background-color: hsla(30, 18%, 87%, 0.215);
+  background-color: var(--sub-bg-color);
 }
 #preparation-time div {
   padding-left: 2rem;
@@ -66,11 +69,12 @@ body {
   line-height: 1.5;
   font-weight: 500;
   padding: 0.5rem 0 0 1.2rem;
-  color: hsl(30, 10%, 34%);
+  /*  */
 }
 #main p,
+li,
 span {
-  color: hsl(30, 10%, 34%);
+  color: var(--li-color);
 }
 
 #main b {
@@ -79,7 +83,7 @@ span {
 .sec-margin h2 {
   font-family: "Young Serif", serif;
   margin: 1rem 0;
-  color: hsl(14, 45%, 36%);
+  color: var(--header-color);
 }
 
 .ul-item {
@@ -99,7 +103,7 @@ span {
   padding-left: 1rem;
 }
 #nutrition .nutri-table strong {
-  color: hsl(14, 45%, 36%);
+  color: var(--header-color);
   font-weight: 900;
 }
 #main #nutrition p,
@@ -128,6 +132,9 @@ span {
   .container {
     margin: 0 2rem;
   }
+  #nutrition {
+    padding-bottom: 1rem;
+  }
 }
 @media (max-width: 350px) {
   #main img {
@@ -142,10 +149,10 @@ span {
   }
 }
 .attribution {
-        font-size: 1rem;
-        text-align: center;
-        padding: 1.5rem;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
+  font-size: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

@@ -110,7 +110,9 @@ span {
 span {
   font-weight: 500;
 }
-
+hr {
+  border: 1px solid hsl(30, 18%, 87%);
+}
 @media (max-width: 550px) {
   #main {
     width: 100%;
